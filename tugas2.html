@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript "src="jquery-3.6.0.min.js"></script>
+<!-- fungsi menggunakan bahasa javascript -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		//fungsi clikc yang kita inginkan 
+		$("div").dblclick(function(){
+			//div inisialisasi untuk masukan tag ke html
+			//dblclick fungsi double click
+		$(this).css({background:"red"});
+		});
+	});
+</script>
+<!-- edit style dengan css -->
+<style type="text/css">
+	div{
+		background:yellow;
+		width: 80px;
+		height: 80px;
+		float: left;
+		margin:15px;
+		}
+</style>
+</head>
+<body>
+<p> klik 2x pada setiap kotak untuk merubah warnanya </p>
+<div>
+</div>
+<dir></dir>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tugas3</title>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<!-- fungsi menggunakan bahasa javascript -->
+	<!-- menyisipkan style css ke html -->
+	<style type="text/css">
+		.kotak{
+			height: 200px;
+			width: 200px;
+			background-color: yellow;
+			}
+		div{
+			padding: 20px;
+			margin: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+				//fungsi clikc yang kita inginkan 
+				//kotak1 inisialisasi
+		$("#tampilkan").click(function(){
+			//fadein memanggil id box dan menampilkan
+			$("#kotak1").fadeIn();
+				});
+		$("#sembunyikan").click(function(){
+			$("#kotak1").hide();
+				});
+		$("#sembunyikan2").click(function(){
+			$("#kotak1").fadeTo("slow", 0.3);
+			//fadeto memanggil dan memudarkan background
+			//0.3 waktu
+				});
+	});
+	</script>
+</head>
+<body>
+	<div class="kotak" id="kotak1"></div>
+	<!-- button untuk memunculkan tombol  -->
+	<input id="sembunyikan" type="button"  value="fade out">
+	<input id="tampilkan" type="button"  value="fade in">
+	<input id="sembunyikan2" type="button"  value="fade To 0.3">
+</body>
+</html>

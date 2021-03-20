@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<!-- identifikasi bahasa yang digunakan adalah javascript -->
+	<script type="text/javascript">
+				//function script memasukan fungsi ke html
+	$(document).ready(function(){
+				//addclass menambahkan class di jquery
+				//#daftar adalah inisialisasi
+	$("#daftar").addClass("merahkuning");
+	//subdaftar adalah inisialisasi class yg di html
+	$(".subdaftar").addClass("kuninghitam")});
+	</script>
+	<!-- menyisipkan style css ke web -->
+	<style type="text/css">
+		.merahkuning {
+			color: red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px;
+		}
+		.kuninghitam {
+			color: blue;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>Paragraf Pertama</p>
+	</div>
+	<div>
+				<!-- li dan ul digunakan untuk sematkan list button -->
+		<ul id="daftar">
+			<li>item 1</li>
+			<li class="subdaftar">item 2</li>
+			<li>item 3</li>
+		</ul>
+	</div>
+
+</body>
+</html>
